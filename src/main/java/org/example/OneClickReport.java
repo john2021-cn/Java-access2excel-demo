@@ -169,7 +169,7 @@ class Report extends JFrame {
                         cellA22.setCellValue(od1);
                     }
                     /*-----初值-----*/
-                    /*-----误差1-----*/
+                    /*-----数据1-----*/
                     preparedStatement = connection.prepareStatement(sqlNo403);
                     resultSet = preparedStatement.executeQuery();
                     while (resultSet.next()) {
@@ -180,7 +180,7 @@ class Report extends JFrame {
                         od1 = (double) Math.round(od1 * 10000) / 10000;
                         cellG27.setCellValue(od1);
                     }
-                    /*-----误差2-----*/
+                    /*-----数据2-----*/
                     preparedStatement = connection.prepareStatement(sqlNo412);
                     resultSet = preparedStatement.executeQuery();
                     while (resultSet.next()) {
@@ -191,7 +191,7 @@ class Report extends JFrame {
                         od1 = (double) Math.round(od1 * 10000) / 10000;
                         cellG32.setCellValue(od1);
                     }
-                    /*-----误差3-----*/
+                    /*-----数据3-----*/
                     preparedStatement = connection.prepareStatement(sqlNo418);
                     resultSet = preparedStatement.executeQuery();
                     while (resultSet.next()) {
@@ -202,7 +202,7 @@ class Report extends JFrame {
                         od1 = (double) Math.round(od1 * 10000) / 10000;
                         cellG37.setCellValue(od1);
                     }
-                    /*-----误差4-----*/
+                    /*-----数据4-----*/
                     preparedStatement = connection.prepareStatement(sqlNo424);
                     resultSet = preparedStatement.executeQuery();
                     while (resultSet.next()) {
@@ -213,7 +213,7 @@ class Report extends JFrame {
                         od1 = (double) Math.round(od1 * 10000) / 10000;
                         cellG42.setCellValue(od1);
                     }
-                    /*-----误差5-----*/
+                    /*-----数据5-----*/
                     preparedStatement = connection.prepareStatement(sqlNo430);
                     resultSet = preparedStatement.executeQuery();
                     while (resultSet.next()) {
@@ -224,9 +224,9 @@ class Report extends JFrame {
                         od1 = (double) Math.round(od1 * 10000) / 10000;
                         cellD53.setCellValue(od1);
                     }
-                    /*-----误差5-----*/
+                    /*-----数据5-----*/
 
-                    /*-----误差6-----*/
+                    /*-----数据6-----*/
                     preparedStatement = connection.prepareStatement(sqlNo436);
                     resultSet = preparedStatement.executeQuery();
                     while (resultSet.next()) {
@@ -243,42 +243,42 @@ class Report extends JFrame {
                     final HSSFCell cellP22 = rowP22.getCell(cellReferenceP22.getCol());
                     cellP22.setCellFormula(cellP22.getCellFormula());
                     /*-----重新计算初值1-----*/
-                    /*-----重新计算误差1-----*/
+                    /*-----重新计算数据1-----*/
                     final CellReference cellReferenceP27 = new CellReference("P27");
                     final HSSFRow rowP27 = sheet.getRow(cellReferenceP27.getRow());
                     final HSSFCell cellP27 = rowP27.getCell(cellReferenceP27.getCol());
                     cellP27.setCellFormula(cellP27.getCellFormula());
-                    /*-----重新计算误差1-----*/
-                    /*-----重新计算误差2-----*/
+                    /*-----重新计算数据1-----*/
+                    /*-----重新计算数据2-----*/
                     final CellReference cellReferenceP32 = new CellReference("P32");
                     final HSSFRow rowP32 = sheet.getRow(cellReferenceP32.getRow());
                     final HSSFCell cellP32 = rowP32.getCell(cellReferenceP32.getCol());
                     cellP32.setCellFormula(cellP32.getCellFormula());
-                    /*-----重新计算误差2-----*/
-                    /*-----重新计算误差3-----*/
+                    /*-----重新计算数据2-----*/
+                    /*-----重新计算数据3-----*/
                     final CellReference cellReferenceP37 = new CellReference("P37");
                     final HSSFRow rowP37 = sheet.getRow(cellReferenceP37.getRow());
                     final HSSFCell cellP37 = rowP37.getCell(cellReferenceP37.getCol());
                     cellP37.setCellFormula(cellP37.getCellFormula());
-                    /*-----重新计算误差3-----*/
-                    /*-----重新计算误差4-----*/
+                    /*-----重新计算数据3-----*/
+                    /*-----重新计算数据4-----*/
                     final CellReference cellReferenceP42 = new CellReference("P42");
                     final HSSFRow rowP42 = sheet.getRow(cellReferenceP42.getRow());
                     final HSSFCell cellP42 = rowP42.getCell(cellReferenceP42.getCol());
                     cellP42.setCellFormula(cellP42.getCellFormula());
-                    /*-----重新计算误差4-----*/
-                    /*-----重新计算误差5-----*/
+                    /*-----重新计算数据4-----*/
+                    /*-----重新计算数据5-----*/
                     final CellReference cellReferenceP53 = new CellReference("P53");
                     final HSSFRow rowP53 = sheet.getRow(cellReferenceP53.getRow());
                     final HSSFCell cellP53 = rowP53.getCell(cellReferenceP53.getCol());
                     cellP53.setCellFormula(cellP53.getCellFormula());
-                    /*-----重新计算误差5-----*/
-                    /*-----重新计算误差6-----*/
+                    /*-----重新计算数据5-----*/
+                    /*-----重新计算数据6-----*/
                     final CellReference cellReferenceV61 = new CellReference("V61");
                     final HSSFRow rowV61 = sheet.getRow(cellReferenceV61.getRow());
                     final HSSFCell cellV61 = rowV61.getCell(cellReferenceV61.getCol());
                     cellV61.setCellFormula(cellV61.getCellFormula());
-                    /*-----重新计算误差6-----*/
+                    /*-----重新计算数据6-----*/
 
                     final FileOutputStream outputStream = new FileOutputStream(excelUrl);
                     workbook.write(outputStream);
@@ -350,7 +350,7 @@ class Report extends JFrame {
                 cellA44.setCellValue(od1);
             }
             /*-----初值-----*/
-            /*-----误差1-----*/
+            /*-----数据1-----*/
             preparedStatement = connection.prepareStatement(sqlNo403);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -361,8 +361,8 @@ class Report extends JFrame {
                 od1 = (double) Math.round(od1 * 10000) / 10000;
                 cellG50.setCellValue(od1);
             }
-            /*-----误差1-----*/
-            /*-----误差2-----*/
+            /*-----数据1-----*/
+            /*-----数据2-----*/
             preparedStatement = connection.prepareStatement(sqlNo412);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -373,7 +373,7 @@ class Report extends JFrame {
                 od1 = (double) Math.round(od1 * 10000) / 10000;
                 cellG55.setCellValue(od1);
             }
-            /*-----误差3-----*/
+            /*-----数据3-----*/
             preparedStatement = connection.prepareStatement(sqlNo418);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -384,7 +384,7 @@ class Report extends JFrame {
                 od1 = (double) Math.round(od1 * 10000) / 10000;
                 cellG60.setCellValue(od1);
             }
-            /*-----误差4-----*/
+            /*-----数据4-----*/
             preparedStatement = connection.prepareStatement(sqlNo424);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -395,7 +395,7 @@ class Report extends JFrame {
                 od1 = (double) Math.round(od1 * 10000) / 10000;
                 cellG65.setCellValue(od1);
             }
-            /*-----误差5-----*/
+            /*-----数据5-----*/
             preparedStatement = connection.prepareStatement(sqlNo430);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -406,9 +406,9 @@ class Report extends JFrame {
                 od1 = (double) Math.round(od1 * 10000) / 10000;
                 cellD76.setCellValue(od1);
             }
-            /*-----误差5-----*/
+            /*-----数据5-----*/
 
-            /*-----误差6-----*/
+            /*-----数据6-----*/
             preparedStatement = connection.prepareStatement(sqlNo436);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -425,31 +425,31 @@ class Report extends JFrame {
             final HSSFCell cellP44 = rowP44.getCell(cellReferenceP44.getCol());
             cellP44.setCellFormula(cellP44.getCellFormula());
             /*-----重新计算初值1-----*/
-            /*-----重新计算误差1-----*/
+            /*-----重新计算数据1-----*/
             final CellReference cellReferenceP50 = new CellReference("P44");
             final HSSFRow rowP50 = sheet.getRow(cellReferenceP50.getRow());
             final HSSFCell cellP50 = rowP50.getCell(cellReferenceP50.getCol());
             cellP50.setCellFormula(cellP50.getCellFormula());
-            /*-----重新计算误差1-----*/
-            /*-----重新计算误差2-----*/
+            /*-----重新计算数据1-----*/
+            /*-----重新计算数据2-----*/
             final CellReference cellReferenceP55 = new CellReference("P49");
             final HSSFRow rowP55 = sheet.getRow(cellReferenceP55.getRow());
             final HSSFCell cellP55 = rowP55.getCell(cellReferenceP55.getCol());
             cellP55.setCellFormula(cellP55.getCellFormula());
-            /*-----重新计算误差2-----*/
-            /*-----重新计算误差3-----*/
+            /*-----重新计算数据2-----*/
+            /*-----重新计算数据3-----*/
             final CellReference cellReferenceP60 = new CellReference("P54");
             final HSSFRow rowP60 = sheet.getRow(cellReferenceP60.getRow());
             final HSSFCell cellP60 = rowP60.getCell(cellReferenceP60.getCol());
             cellP60.setCellFormula(cellP60.getCellFormula());
-            /*-----重新计算误差3-----*/
-            /*-----重新计算误差4-----*/
+            /*-----重新计算数据3-----*/
+            /*-----重新计算数据4-----*/
             final CellReference cellReferenceP65 = new CellReference("P59");
             final HSSFRow rowP65 = sheet.getRow(cellReferenceP65.getRow());
             final HSSFCell cellP65 = rowP65.getCell(cellReferenceP65.getCol());
             cellP65.setCellFormula(cellP65.getCellFormula());
-            /*-----重新计算误差4-----*/
-            /*-----重新计算误差5-----*/
+            /*-----重新计算数据4-----*/
+            /*-----重新计算数据5-----*/
             final CellReference cellReferenceP76 = new CellReference("P70");
             final HSSFRow rowP76 = sheet.getRow(cellReferenceP76.getRow());
             final HSSFCell cellP76 = rowP76.getCell(cellReferenceP76.getCol());
@@ -458,13 +458,13 @@ class Report extends JFrame {
             final HSSFRow rowR76 = sheet.getRow(cellReferenceR76.getRow());
             final HSSFCell cellR76 = rowR76.getCell(cellReferenceR76.getCol());
             cellR76.setCellFormula(cellR76.getCellFormula());
-            /*-----重新计算误差5-----*/
-            /*-----重新计算误差6-----*/
+            /*-----重新计算数据5-----*/
+            /*-----重新计算数据6-----*/
             final CellReference cellReferenceV84 = new CellReference("V78");
             final HSSFRow rowV84 = sheet.getRow(cellReferenceV84.getRow());
             final HSSFCell cellV84 = rowV84.getCell(cellReferenceV84.getCol());
             cellV84.setCellFormula(cellV84.getCellFormula());
-            /*-----重新计算误差6-----*/
+            /*-----重新计算数据6-----*/
         }
 
         final FileOutputStream outputStream = new FileOutputStream(excelUrl);
